@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://csnj4uycavapo"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_45c8j"]
+[ext_resource type="FontFile" uid="uid://y8qanov6dk68" path="res://assets/ka1.ttf" id="1_p6m72"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_45c8j")
+
+[node name="timeLeft" type="Label" parent="."]
+texture_filter = 1
+offset_left = 481.0
+offset_top = 900.0
+offset_right = 514.0
+offset_bottom = 922.0
+scale = Vector2(5, 5)
+pivot_offset = Vector2(0, 100)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_p6m72")
+text = "60"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="WINtext" type="Label" parent="."]
+texture_filter = 1
+offset_left = 272.0
+offset_top = 597.0
+offset_right = 394.0
+offset_bottom = 619.0
+scale = Vector2(5, 5)
+pivot_offset = Vector2(0, 100)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_p6m72")
+text = "you did it!!!"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="attempts" type="Label" parent="."]
+texture_filter = 1
+offset_left = 426.0
+offset_top = 400.0
+offset_right = 578.0
+offset_bottom = 422.0
+scale = Vector2(2, 2)
+pivot_offset = Vector2(0, 100)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_p6m72")
+text = "in 2 attempts"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 396.0
+offset_top = 378.0
+offset_right = 539.0
+offset_bottom = 405.0
+scale = Vector2(2.5, 2.5)
+theme_override_fonts/font = ExtResource("1_p6m72")
+text = "PLAY AGAIN?"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="upsidedown"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+boot_splash/image="res://Pineapple Cake.png"
+config/icon="res://assets/sprites/icon.svg"
+
+[autoload]
+
+Music="*res://scripts/music.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemy"
+2d_physics/layer_4="cake"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.709804, 0.909804, 0.960784, 1)
