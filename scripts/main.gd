@@ -15,19 +15,20 @@ func _process(delta):
 
 
 func _on_cake_body_entered(body):
-	Music.gameOn = 0
-	Music.winTime = "" +str(int($HUD/Timer.time_left))+""
-	$HUD/Timer.stop()
-	$HUD/WINtext.show()
-	$HUD/Button.show()
-	$HUD/timeLeft.text = Music.winTime
-	
-	if Music.deathCount == 1:
-		$HUD/attempts.text = "in "+ str(Music.deathCount) +" attempt"
-	else:
-		$HUD/attempts.text = "in "+ str(Music.deathCount) +" attempts"
-	
-	$HUD/attempts.show()
+	if Music.gameOn == 1:
+		Music.gameOn = 0
+		Music.winTime = "" +str(int($HUD/Timer.time_left))+""
+		$HUD/Timer.stop()
+		$HUD/WINtext.show()
+		$HUD/Button.show()
+		$HUD/timeLeft.text = Music.winTime
+		
+		if Music.deathCount == 1:
+			$HUD/attempts.text = "in "+ str(Music.deathCount) +" attempt"
+		else:
+			$HUD/attempts.text = "in "+ str(Music.deathCount) +" attempts"
+		
+		$HUD/attempts.show()
 	
 	
 

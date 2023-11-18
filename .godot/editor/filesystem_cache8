@@ -1,0 +1,39 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1700286114
+export_presets.cfg::TextFile::-1::1700249874::0::1::::<><>::
+Pineapple Cake.png::CompressedTexture2D::57517075913745956::1700247844::1700247917::1::::<><>::
+::res://assets/::1700247917
+ka1.ttf::FontFile::1753628890507527823::1700247844::1700247917::1::::<><>::
+::res://assets/audio/::1700247917
+braincheck.mp3::AudioStreamMP3::515404025323191216::1700247844::1700247917::1::::<><>::
+::res://assets/sprites/::1700247917
+background_tilemap.png::CompressedTexture2D::1378411232135988782::1700247844::1700247917::1::::<><>::
+crouch.png::CompressedTexture2D::278342067829123657::1700247844::1700247917::1::::<><>::
+DinoSprites - doux.png::CompressedTexture2D::8567155108111518847::1700247844::1700247917::1::::<><>::
+hurt.png::CompressedTexture2D::6942421109298400336::1700247844::1700247917::1::::<><>::
+icon.svg::CompressedTexture2D::5065291154021822475::1700247844::1700247917::1::::<><>::
+jump-1.png::CompressedTexture2D::7273300612762748946::1700247844::1700247917::1::::<><>::
+jump-2.png::CompressedTexture2D::8571834567026830628::1700247844::1700247917::1::::<><>::
+jump-3.png::CompressedTexture2D::8131098803425646104::1700247844::1700247917::1::::<><>::
+Pineapple Upside-Down Cake.webp::CompressedTexture2D::5033721479157564583::1700247844::1700247917::1::::<><>::
+tilemap.png::CompressedTexture2D::3228616607368604390::1700247844::1700247917::1::::<><>::
+tilemap_packed.png::CompressedTexture2D::589221971481742362::1700247844::1700247917::1::::<><>::
+walk-1.png::CompressedTexture2D::1936581967216843726::1700247844::1700247917::1::::<><>::
+walk-2.png::CompressedTexture2D::8249257922701774820::1700247844::1700247917::1::::<><>::
+walk-3.png::CompressedTexture2D::1168823492863196461::1700247844::1700247917::1::::<><>::
+walk-4.png::CompressedTexture2D::4284655280364370549::1700247844::1700247917::1::::<><>::
+walk-5.png::CompressedTexture2D::5406103172206813207::1700247844::1700247917::1::::<><>::
+walk-6.png::CompressedTexture2D::8495748056456742325::1700247844::1700247917::1::::<><>::
+walk-7.png::CompressedTexture2D::8836019593279310254::1700247844::1700247917::1::::<><>::
+::res://assets/sprites/DinoSprites_doux-assets/::1700247917
+DinoSprites_doux.png::CompressedTexture2D::632458387467141435::1700247844::1700247917::1::::<><>::
+::res://scenes/::1700248879
+hud.tscn::PackedScene::6063676792265707892::1700247844::0::1::::<><>::res://scripts/hud.gd<>uid://y8qanov6dk68
+main.tscn::PackedScene::2231789008446161184::1700248879::0::1::::<><>::res://scripts/main.gd<>uid://bd0v5jw86lmhq::::res://scenes/player.tscn<>uid://inonufdu4mmk::::res://assets/sprites/tilemap_packed.png<>uid://cdymwl4sfaw5d::::res://assets/sprites/Pineapple Upside-Down Cake.webp<>uid://tvyh4y8633j3::::res://assets/sprites/background_tilemap.png<>uid://y8qanov6dk68::::res://assets/ka1.ttf<>uid://csnj4uycavapo::::res://scenes/hud.tscn<>uid://hlwvnebp5ld5::::res://assets/audio/braincheck.mp3
+player.tscn::PackedScene::2649925797361025558::1700247844::0::1::::<><>::res://scripts/player.gd<>uid://2udhsx6kmcqg
+::res://scripts/::1700248153
+cake.gd::GDScript::-1::1700247844::0::1::::<>Area2D<>::
+hud.gd::GDScript::-1::1700247844::0::1::::<>CanvasLayer<>::
+main.gd::GDScript::-1::1700248153::0::1::::<>Node2D<>::
+music.gd::GDScript::-1::1700247844::0::1::::<>Node<>::
+player.gd::GDScript::-1::1700247844::0::1::::<>CharacterBody2D<>::
