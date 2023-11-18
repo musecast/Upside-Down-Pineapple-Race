@@ -33,12 +33,13 @@ func _on_cake_body_entered(body):
 	
 
 func _on_spikes_body_entered(body):
-	if body.name == "dino":
-		var audio = get_node("/root/Node2D/AudioStreamPlayer")
-		#Music.musicProgress = get_tree().get_playback_position(AudioStreamPlayer)
-		Music.musicProgress = audio.get_playback_position() 
-		get_tree().reload_current_scene()
-		Music.deathCount = Music.deathCount + 1
-		Music.gameOn = 1
+	if Music.gameOn == 1:
+		if body.name == "dino":
+			var audio = get_node("/root/Node2D/AudioStreamPlayer")
+			#Music.musicProgress = get_tree().get_playback_position(AudioStreamPlayer)
+			Music.musicProgress = audio.get_playback_position() 
+			get_tree().reload_current_scene()
+			Music.deathCount = Music.deathCount + 1
+			Music.gameOn = 1
 		
 		
